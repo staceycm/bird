@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小鸟首页</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+	<div id="contain">
+		<span>0</span>
+		<div id="ready"></div>
+		<div id="start"></div>
+		<div id="bird" class='bird2'></div>
+		<div id="bottom"></div>
+	</div>
+	<script>
+		var i = 0;
+		setInterval(function(){
+		  bird.className = 'bird' + ((++i) % 3);
+		}, 160);
+	</script>
+</body>
+</html>

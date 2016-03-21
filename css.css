@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+    display: flex;
+    justify-content:center;
+
+}
+#contain{
+	width: 360px;
+	height: 660px;
+	position:relative;
+	overflow: hidden; 
+	background: url(imgs_pack.png) no-repeat -2px 0px;
+}
+#contain span{
+	position: absolute;
+	color: #fff;
+	font-size: 36px;
+	top: 100px;
+	left: 162px;
+}
+#ready{
+	position: absolute;
+	width: 64px;
+	height: 231px;
+	background: url(imgs_pack.png) no-repeat -207px -651px;
+	top:250px;
+	left:65px;
+	transform:rotate(-90deg);
+	transform-origin:left top;
+}
+#start{
+	position: absolute;
+	width: 144px;
+	height: 124px;
+	background: url(imgs_pack.png) no-repeat -290px -894px;
+	top:300px;
+	left:108px;
+}
+#bottom{
+	position: absolute;
+	bottom: 0;
+	left:-30px;
+	width: 420px;
+	height: 140px;
+	background: url(imgs_pack.png) no-repeat -434px -2px;
+	animation: anim 500ms linear 0s infinite;
+}
+@keyframes anim{
+    0%{transform:translateX(0px);}
+    50%{transform:translateX(15px);}
+    100%{transform:translateX(30px);}
+}
+.bird0{
+	position: absolute;
+	top:330px;
+	left:89px;
+	background: url(imgs_pack.png) no-repeat -169px -978px;
+}
+.bird1{
+	position: absolute;
+	top:332px;
+	left:88px;
+	background: url(imgs_pack.png) no-repeat -137px -978px;
+}
+.bird2{
+	position: absolute;
+	top:334px;
+	left:88px;
+	background: url(imgs_pack.png) no-repeat -105px -978px;
+}
+#bird{
+	width: 31px;
+	height: 43px;
+	transform:rotate(-90deg);
+	transform-origin:left top;
+}
+
